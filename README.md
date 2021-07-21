@@ -13,3 +13,4 @@ This is my learning notes for TypeScript.
 - [Function 函式](./function.md)
 - [Type Assertion](./type-assertion.md)
 - [Type Aliases 型別別名](./type-aliases.md)
+- [String Literal 字串字面量](./string-literal.md)
