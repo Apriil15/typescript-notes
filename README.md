@@ -15,3 +15,4 @@ This is my learning notes for TypeScript.
 - [Type Aliases 型別別名](./type-aliases.md)
 - [String Literal 字串字面量](./string-literal.md)
 - [Tuple](./tuple.md)
+- [Enum 列舉](./enum.md)
