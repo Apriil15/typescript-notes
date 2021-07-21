@@ -14,3 +14,4 @@ This is my learning notes for TypeScript.
 - [Type Assertion](./type-assertion.md)
 - [Type Aliases 型別別名](./type-aliases.md)
 - [String Literal 字串字面量](./string-literal.md)
+- [Tuple](./tuple.md)
