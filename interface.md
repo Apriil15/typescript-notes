@@ -1,6 +1,9 @@
 # Interface
 
-宣告變數時，形狀要跟 interface 一致，多一個少一個都不行
+<details>
+  <summary>用在對物件形狀的描述</summary>
+  
+  宣告變數時，形狀要跟 interface 一致，多一個少一個都不行
 
 ### 可選屬性
 
@@ -39,3 +42,58 @@ let person: Person = {
 
 person.Name = "Kevin"; // Name 是 readonly 不能再 assign，會報錯
 ```
+
+</details>
+
+<details>
+  <summary>用在對方法的抽象化（像 C#）</summary>
+  
+  - 一般寫法
+
+```tsx
+interface Alarm {
+  alert(): void;
+}
+
+interface Light {
+  lightOn(): void;
+  lightOff(): void;
+}
+
+class Door {}
+
+// 繼承類別，實現介面
+class SecurityDoor extends Door implements Alarm {
+  alert() {
+    console.log("SecurityDoor alert");
+  }
+}
+
+// 實現多個介面
+class Car implements Alarm, Light {
+  alert() {
+    console.log("Car alert");
+  }
+  lightOn() {
+    console.log("Car light on");
+  }
+  lightOff() {
+    console.log("Car light off");
+  }
+}
+```
+
+- 介面繼承介面
+
+```tsx
+interface Alarm {
+  alert(): void;
+}
+
+interface LightableAlarm extends Alarm {
+  lightOn(): void;
+  lightOff(): void;
+}
+```
+
+</details>
