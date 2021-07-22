@@ -16,3 +16,4 @@ This is my learning notes for TypeScript.
 - [String Literal 字串字面量](./string-literal.md)
 - [Tuple](./tuple.md)
 - [Enum 列舉](./enum.md)
+- [Class 類別](./class.md)
