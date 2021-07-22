@@ -17,3 +17,4 @@ This is my learning notes for TypeScript.
 - [Tuple](./tuple.md)
 - [Enum 列舉](./enum.md)
 - [Class 類別](./class.md)
+- [Generics 泛型](./generics.md)
