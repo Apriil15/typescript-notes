@@ -46,6 +46,36 @@
   };
   ```
 
+- Arrow Function
+
+  一般寫法
+
+  ```tsx
+  let sum = (x: number, y: number): number => {
+    return x + y;
+  };
+
+  let sum2 = (x: number, y: number): number => x + y;
+
+  console.log(sum(1, 2));
+  ```
+
+  在 class 的寫法（基本上是一樣的）
+
+  ```tsx
+  class Student {
+    name: string;
+    constructor(name: string) {
+      this.name = name;
+    }
+
+    printName = () => console.log(this.name);
+  }
+
+  let student: Student = new Student("Kappa");
+  student.printName();
+  ```
+
 - 用 interface 來定義 function
 
   ```tsx
