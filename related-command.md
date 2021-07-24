@@ -10,7 +10,6 @@
 - 確認版本
 
   ```bash
-  # 確認版本
   $ tsc -v
   Version 4.3.5
   ```
@@ -18,13 +17,16 @@
 - 產生 tsconfig.json
 
   ```powershell
-  # 產生 tsconfig.json
   tsc --init
   ```
 
 - 編譯 TypeScript 檔案
 
   ```powershell
+  # compile all files
+  tsc
+
+  # compile specific file
   tsc index.ts
   ```
 
