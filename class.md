@@ -9,6 +9,10 @@
 - 繼承用關鍵字 `extends`
 - `readonly`: 不能再被修改
 
+---
+
+- 基本寫法
+
 ```tsx
 class Animal {
   public readonly name: string;
@@ -77,4 +81,31 @@ class Dog extends Animal {
 
 let dog: Dog = new Dog("Doggy");
 dog.sayHi();
+```
+
+- Parameter Properties（精簡的寫法）
+
+  把修飾詞寫在建構子裡面
+
+```tsx
+class Student {
+  constructor(public name: string, public age: number) {}
+}
+
+const student = new Student("Sam", 27);
+
+console.log(student.name);
+```
+
+等同此寫法
+
+```tsx
+class Student {
+  name: string;
+  age: number;
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
 ```
